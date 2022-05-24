@@ -1,13 +1,174 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 91px;
+  padding: 30px 20px;
+  background-color: #21222A;
+}
+
+nav > .nav--logo{
+  height: 50px;
+  margin-right: 15px;
+}
+
+nav > .nav--logo-text{
+  margin-right: auto;
+  color: #61DAFB;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 460px){
+  nav > .nav--logo{
+    height: 30px;
+    margin-right: 15px;
+  }
+  nav > .nav--logo-text{
+    margin-right: auto;
+    color: #61DAFB;
+    font-size: 16px;
+  }
+
+  nav > .nav--title{
+    font-weight: 600;
+    color: #DEEBF8;
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (max-width: 315px){
+  nav > .nav--logo-text{
+    margin-right: 20px;
+    color: #61DAFB;
+    font-size: 16px;
+  }
+}
+
+nav > .nav--title{
+  font-weight: 600;
+  color: #DEEBF8;
+}
+
+.wrap-product{
+  margin-top: 50px;
+}
+.main-wrap-konten {
+  /* background-color: blanchedalmond; */
+  width: 230px;
+  height: 350px;
+  padding: 5px;
+  box-sizing: border-box;
+  box-shadow:  1px 1px 7px 0.3px rgb(186, 186, 186);
+  margin-left: 30px;
+  border-radius: 7px;
+}
+
+.main-wrap-konten .card-konten{
+  /* background-color: aqua; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-wrap-konten .wrap-img{
+  /* background-color: aquamarine; */
+  width: 100%;
+  height: 45%;
+  
+}
+
+.wrap-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.middle{
+  /* background-color: blueviolet; */
+  height: 30px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  padding-bottom: 35px;
+}
+
+.middle .judul-artikel{
+  margin-top: 0;
+}
+.middle .price-car{
+  margin-top: -5px;
+}
+
+.main-wrap-konten .wrap-desc{
+  padding: 5px;
+  box-sizing: border-box;
+  /* background-color: aquamarine; */
+  height: auto;
+}
+
+.btn-detail{
+  width: 100%;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(0, 223, 82);
+  color: aliceblue;
+  font-weight: 600;
+  
+}
+
+ol{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li{
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.href{
+  text-decoration: none;
+ 
+
+}
+
+.quantity-wrap{
+  display: flex;
+}
+
+.checkout--text{
+    margin-right: 50px;
+    color: #61DAFB;
+    font-size: 16px;
+}
+
+.checkout--wrap{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 91px;
+  padding: 30px 20px;
+  background-color: #21222A;
+}
+
+.quantity-wrap p{
+  width: 100px;
+  background-color: bisque;
 }
